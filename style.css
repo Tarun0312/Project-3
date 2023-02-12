@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    
+    color: #ffffff;
+}
+
+/* Navbar */
+
+nav {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3.4rem;
+    height: fit-content;
+}
+nav .logo-container{
+   
+    border-right:solid 2px #ffffff;
+    width: 14%;
+}
+
+nav ul{
+    display: flex;
+    gap: 3rem;
+    width: 73%;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li :hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.8rem 2rem;
+    background-color: #800080eb;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: solid 2px #800080eb;
+}
+
+button:hover{
+    background-color:#ffffff ;
+    color: #800080eb;
+    font-weight: 600;
+}
+/* Main Content */
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:solid #000000 2px;
+    width:100vw;
+    height:100vh;
+    background: url('https://github.com/pwlive/fullstackwebdevelopment/blob/main/Assignment_03(HTML+CSS)/assets/bg.png?raw=true');
+    
+    row-gap: 3rem;
+}
+
+
+
+main .content h1{
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+main .content p{
+    text-align: center;
+}
+
+h1::selection{
+    background-color: #ffffff;
+   color: #800080eb;
+}
